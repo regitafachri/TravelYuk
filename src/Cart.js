@@ -11,7 +11,7 @@ class Cart extends Component {
     return (
       <View>
         {this.props.dataCart}
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => this.props.navigation.navigate("Terimakasih")}>
           <Text> Bayar </Text>
         </TouchableOpacity>
       </View>
@@ -24,4 +24,4 @@ const mapStateToProps = state => {
     dataCart: state.cart.items
   };
 };
-export default Cart;
+export default connect(mapStateToProps)(Cart);

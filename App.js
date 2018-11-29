@@ -5,7 +5,7 @@ import Signup from './src/Signup'
 import TravelPackage from './src/TravelPackage'
 import Packagedetails from './src/Packagedetail'
 import Cart from './src/Cart'
-import Thanks from './src/Terimakasih'
+import Terimakasih from './src/Terimakasih'
 import { Provider } from "react-redux";
 
 const BaseRoutes = StackNavigator(
@@ -14,7 +14,8 @@ const BaseRoutes = StackNavigator(
     Signup: Signup,
     TravelPackage: TravelPackage,
     Packagedetails: Packagedetails,
-    Cart:Cart
+    Cart:Cart,
+    Terimakasih: Terimakasih
   },
   {
     initialRouteName: "Login"
